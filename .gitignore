@@ -1,0 +1,9 @@
+.idea/
+vendor/
+cover.out
+lasius-mixtus.exe
+seo
+dist/
+unsecured/
+*.bak
+docs/
