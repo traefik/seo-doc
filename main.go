@@ -11,7 +11,7 @@ import (
 func main() {
 	cfg := Config{}
 
-	flag.StringVar(&cfg.Path, "path", ".", "Path of the documentation")
+	flag.StringVar(&cfg.Path, "path", ".experimental/doc/traefik", "Path of the documentation")
 
 	flag.BoolVar(&cfg.Debug, "debug", false, "Debug mode")
 
@@ -30,8 +30,7 @@ func main() {
 		return
 	}
 
-	nArgs := flag.NArg()
-	if nArgs > 0 {
+	if flag.NArg() > 0 {
 		usage()
 	}
 

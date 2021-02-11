@@ -40,20 +40,26 @@ func Test_shouldProcessFile(t *testing.T) {
 		},
 		{
 			desc:           "match sitemap under version",
-			filePath:       "/v2.4/sitemap.xml",
-			includePattern: sitemapUnderVersion,
+			filePath:       "foo/v2.4/sitemap.xml",
+			includePattern: sitemapUnderVersionRegex,
 			expected:       true,
 		},
 		{
 			desc:           "match sitemap under version",
-			filePath:       "/v2.4/sitemap.xml.gz",
-			includePattern: sitemapUnderVersion,
+			filePath:       "foo/v2.4/sitemap.xml.gz",
+			includePattern: sitemapUnderVersionRegex,
 			expected:       true,
 		},
 		{
 			desc:           "does not match sitemap under version",
-			filePath:       "/v2.4/powpow.xml.gz",
-			includePattern: sitemapUnderVersion,
+			filePath:       "foo/v2.4/powpow.xml.gz",
+			includePattern: sitemapUnderVersionRegex,
+			expected:       false,
+		},
+		{
+			desc:           "does not match sitemap under version",
+			filePath:       "/powpow.xml.gz",
+			includePattern: sitemapUnderVersionRegex,
 			expected:       false,
 		},
 	}
