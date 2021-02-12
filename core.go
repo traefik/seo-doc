@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -35,6 +36,7 @@ func run(cfg Config) error {
 			}
 
 			versions := versionRegex.FindStringSubmatch(path)
+
 			version := ""
 			if len(versions) > 1 {
 				version = versions[1]
@@ -69,21 +71,22 @@ func htmlFileUnderVersion(path string, productName string, version string) error
 		link := s.Find(`link[rel="canonical"]`)
 		if link != nil && len(link.Nodes) == 0 {
 			s.AppendHtml(fmt.Sprintf(`<link rel="canonical" href="%s/%s/" />`, rootURL, productName))
-			fmt.Printf("[canonical] %s Adding canonical link\n", path)
+			log.Printf("[canonical] %s Adding canonical link", path)
 		}
 
 		// Add meta no follow
 		meta := s.Find(`meta[name="robots"][content="index, nofollow"]`)
 		if meta != nil && len(meta.Nodes) == 0 {
 			s.AppendHtml(`<meta name="robots" content="index, nofollow" />`)
-			fmt.Printf("[robots] %s Adding meta robots\n", path)
+			log.Printf("[robots] %s Adding meta robots", path)
 		}
 
 		// Adds a Suffix in a format | product-name | version
 		title := s.Find(`title`)
 		if title != nil {
 			productNameTitleCase := strings.Title(strings.ReplaceAll(productName, "-", " "))
-			suffix := fmt.Sprintf(`| %s | %s`, productNameTitleCase, version)
+			suffix := fmt.Sprintf("| %s | %s", productNameTitleCase, version)
+
 			titleText := title.Text()
 			if !strings.Contains(titleText, suffix) {
 				newTitle := fmt.Sprintf("%s %s", strings.ReplaceAll(titleText, fmt.Sprintf(` - %s`, productNameTitleCase), ""), suffix)
@@ -91,6 +94,7 @@ func htmlFileUnderVersion(path string, productName string, version string) error
 					maxNewTitleLength := maxTitleLength - len(suffix)
 					newTitle = fmt.Sprintf("%s... %s", titleText[:maxNewTitleLength-4], suffix)
 				}
+
 				title.SetText(newTitle)
 			}
 		}
@@ -110,12 +114,12 @@ func htmlFile(path string) error {
 		doc.Find("head").Each(func(i int, s *goquery.Selection) {
 			desc := s.Find(`meta[name="description"]`)
 			if desc != nil {
-				fmt.Printf("[description] %s Updating meta description\n", path)
+				log.Printf("[description] %s Updating meta description", path)
 				if v, ok := content.Attr("value"); ok {
 					desc.SetAttr("content", v)
 				}
 			} else {
-				fmt.Printf("[description] %s Creating meta description\n", path)
+				log.Printf("[description] %s Creating meta description", path)
 				if v, ok := content.Attr("value"); ok {
 					s.AppendHtml(fmt.Sprintf(`<meta name="description" content="%s" />`, v))
 				}
@@ -127,7 +131,7 @@ func htmlFile(path string) error {
 }
 
 func sitemapUnderVersion(path string) error {
-	fmt.Printf("[sitemap] %s deleted\n", path)
+	log.Printf("[sitemap] %s deleted", path)
 	return os.Remove(path)
 }
 
@@ -142,12 +146,11 @@ func writeFile(path string, doc *goquery.Document) error {
 
 func readFile(path string) (*goquery.Document, error) {
 	f, err := os.Open(path)
-	defer func() {
-		_ = f.Close()
-	}()
 	if err != nil {
 		return nil, err
 	}
+
+	defer func() { _ = f.Close() }()
 
 	return goquery.NewDocumentFromReader(bufio.NewReader(f))
 }

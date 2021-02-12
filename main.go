@@ -6,12 +6,13 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
 	cfg := Config{}
 
-	flag.StringVar(&cfg.Path, "path", ".experimental/doc/traefik", "Path of the documentation")
+	flag.StringVar(&cfg.Path, "path", "", "Path of the documentation")
 
 	flag.BoolVar(&cfg.Debug, "debug", false, "Debug mode")
 
@@ -53,7 +54,7 @@ func usage() {
 }
 
 func validate(cfg Config) error {
-	if cfg.Path == "" {
+	if strings.TrimSpace(cfg.Path) == "" {
 		return errors.New("path is required")
 	}
 

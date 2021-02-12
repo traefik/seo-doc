@@ -38,7 +38,6 @@
     "gomnd",
     "wsl",
     "nlreturn",
-    "gocognit",
     "nestif",
     "testpackage",
     "paralleltest",
@@ -64,7 +63,3 @@
   [[issues.exclude-rules]]
     path = "version.go"
     text = "(version|commit|date) is a global variable"
-
-  [[issues.exclude-rules]]
-    path = "core.go"
-    text = "Function 'run' is too long"
