@@ -141,6 +141,9 @@ func writeFile(path string, doc *goquery.Document) error {
 		return err
 	}
 
+	html = strings.ReplaceAll(html, `src="http://`, `src="https://`)
+	html = strings.ReplaceAll(html, `href="http://`, `href="https://`)
+
 	return ioutil.WriteFile(path, []byte(html), os.ModeAppend)
 }
 
