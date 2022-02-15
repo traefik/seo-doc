@@ -15,30 +15,6 @@ func Test_shouldProcessFile(t *testing.T) {
 		expected       bool
 	}{
 		{
-			desc:           "match html file",
-			filePath:       "index.html",
-			includePattern: htmlFileRegex,
-			expected:       true,
-		},
-		{
-			desc:           "does not match html file",
-			filePath:       "index.htm",
-			includePattern: htmlFileRegex,
-			expected:       false,
-		},
-		{
-			desc:           "match html file under version",
-			filePath:       "/v2.4/index.html",
-			includePattern: htmlFileRegex,
-			expected:       true,
-		},
-		{
-			desc:           "does not match html file under version",
-			filePath:       "/v2.4/index.htm",
-			includePattern: htmlFileRegex,
-			expected:       false,
-		},
-		{
 			desc:           "match sitemap under version",
 			filePath:       "foo/v2.4/sitemap.xml",
 			includePattern: sitemapUnderVersionRegex,

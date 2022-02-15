@@ -20,14 +20,16 @@ const (
 
 var (
 	versionRegex             = regexp.MustCompile(`^.*\/(v\d+\.\d+)\/.*$`)
-	htmlFileRegex            = regexp.MustCompile(`^.*\.html$`)
 	htmlUnderVersionRegex    = regexp.MustCompile(`^.*\/v\d+\.\d+\/.*\.html$`)
 	sitemapUnderVersionRegex = regexp.MustCompile(`\.*/v\d+\.\d+\/.*sitemap\.xml(.gz)?`)
 )
 
 func run(cfg Config) error {
 	// Extract product name
-	productName := filepath.Base(cfg.Path)
+	productName := cfg.Product
+	if productName == "" {
+		productName = filepath.Base(cfg.Path)
+	}
 
 	err := filepath.Walk(cfg.Path,
 		func(path string, info os.FileInfo, err error) error {
@@ -44,10 +46,6 @@ func run(cfg Config) error {
 
 			if shouldProcessFile(path, htmlUnderVersionRegex) {
 				return htmlFileUnderVersion(path, productName, version)
-			}
-
-			if shouldProcessFile(path, htmlFileRegex) {
-				return htmlFile(path)
 			}
 
 			if shouldProcessFile(path, sitemapUnderVersionRegex) {
@@ -84,10 +82,11 @@ func htmlFileUnderVersion(path string, productName string, version string) error
 		// Adds a Suffix in a format | product-name | version
 		title := s.Find(`title`)
 		if title != nil {
+			titleText := title.Text()
+
 			productNameTitleCase := strings.Title(strings.ReplaceAll(productName, "-", " "))
 			suffix := fmt.Sprintf("| %s | %s", productNameTitleCase, version)
 
-			titleText := title.Text()
 			if !strings.Contains(titleText, suffix) {
 				newTitle := fmt.Sprintf("%s %s", strings.ReplaceAll(titleText, fmt.Sprintf(` - %s`, productNameTitleCase), ""), suffix)
 				if len(newTitle) > maxTitleLength {
@@ -98,33 +97,6 @@ func htmlFileUnderVersion(path string, productName string, version string) error
 				title.SetText(newTitle)
 			}
 		}
-	})
-
-	return writeFile(path, doc)
-}
-
-func htmlFile(path string) error {
-	doc, err := readFile(path)
-	if err != nil {
-		return err
-	}
-
-	// Adds to a document a meta description if available as a hidden input.
-	doc.Find(`#meta-description`).Each(func(i int, content *goquery.Selection) {
-		doc.Find("head").Each(func(i int, s *goquery.Selection) {
-			desc := s.Find(`meta[name="description"]`)
-			if desc != nil {
-				log.Printf("[description] %s Updating meta description", path)
-				if v, ok := content.Attr("value"); ok {
-					desc.SetAttr("content", v)
-				}
-			} else {
-				log.Printf("[description] %s Creating meta description", path)
-				if v, ok := content.Attr("value"); ok {
-					s.AppendHtml(fmt.Sprintf(`<meta name="description" content="%s" />`, v))
-				}
-			}
-		})
 	})
 
 	return writeFile(path, doc)

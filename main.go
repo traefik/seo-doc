@@ -13,7 +13,7 @@ func main() {
 	cfg := Config{}
 
 	flag.StringVar(&cfg.Path, "path", "", "Path of the documentation")
-
+	flag.StringVar(&cfg.Product, "product", "", "Product name")
 	flag.BoolVar(&cfg.Debug, "debug", false, "Debug mode")
 
 	version := flag.Bool("v", false, "Show version.")

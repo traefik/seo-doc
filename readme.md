@@ -18,33 +18,17 @@ This program aims to process a documentation folder from [traefik/doc](https://g
 <!-- in a page under v1.0 -->
 <head>
   <!-- ... -->
-  <link rel="canonical" href="https://doc.traefik.io/" />
+  <link rel="canonical" href="https://doc.traefik.io/<product_name>" />
   <!-- ... -->
 </head>
 ```
 
 3. Titles in older versions should have the Product name and version as a suffix, and should not have more than 65 characters. For example:
 ```
-  Overview | Traefik | v2.0
+Overview | Traefik | v2.0
 ```
 
-4. Sitemap.xml and Sitemap.xml.gz should not exist under version folders.
-
-5. Latest documentation pages (not older) should have a meta description with a brief summary of what that page is about. If the md file has an input hidden with ID 'meta-description', it will be automatically promoted as a meta tag. It's recommended that it has less than 156 characters.
-
-How it should be in the documentation md file:
-```html
-<input type="hidden" id="meta-description" value="This article explains how to configure a router...">
-```
-
-How it should be in the final HTML file:
-```html
-<head>
-  <!-- ... -->
-  <meta name="description" content="This article explains how to configure a router..." />
-  <!-- ... -->
-</head>
-```
+4. sitemap.xml and sitemap.xml.gz should not exist under version folders.
 
 ### How to use it
 
