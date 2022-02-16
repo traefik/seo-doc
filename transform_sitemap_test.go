@@ -27,6 +27,11 @@ func TestSitemapTransform_Match(t *testing.T) {
 		},
 		{
 			desc:   "does not match sitemap under version",
+			path:   "foo/v2.4/sitemap.xml_gz",
+			assert: assert.False,
+		},
+		{
+			desc:   "does not match sitemap under version",
 			path:   "foo/v2.4/powpow.xml.gz",
 			assert: assert.False,
 		},

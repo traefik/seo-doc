@@ -16,7 +16,7 @@ type SitemapTransform struct {
 func NewSitemapTransform(product string) *SitemapTransform {
 	return &SitemapTransform{
 		product: product,
-		pattern: regexp.MustCompile(`\.*/v\d+\.\d+/.*sitemap\.xml(.gz)?`),
+		pattern: regexp.MustCompile(`\.*/v\d+\.\d+/.*sitemap\.xml(\.gz)?$`),
 	}
 }
 
