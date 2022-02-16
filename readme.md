@@ -32,11 +32,20 @@ Overview | Traefik | v2.0
 
 ### How to use it
 
-You can use the `seo` directly from command line, and using the path to the documentation dir as parameter. Example:
+You can use the `seo` directly from command line, and using the path to the documentation dir as parameter.
+
+Examples:
 
 ```sh
-seo /path/to/doc/traefik
-seo /path/to/doc/traefik-mesh
-seo /path/to/doc/traefik-pilot
-seo /path/to/doc/traefik-enterprise
+seo -path /path/to/doc/traefik
+seo -path /path/to/doc/traefik-mesh
+seo -path /path/to/doc/traefik-pilot
+seo -path /path/to/doc/traefik-enterprise
+```
+
+```sh
+seo -path ./site -product traefik
+seo -path ./site -product "traefik-mesh"
+seo -path ./site -product "traefik-pilot"
+seo -path ./site -product "traefik-enterprise"
 ```
