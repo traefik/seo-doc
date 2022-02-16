@@ -15,35 +15,33 @@ const rootURL = "https://doc.traefik.io"
 
 const maxTitleLength = 65
 
-// VersionTransform transforms files under a versioned folder.
-type VersionTransform struct {
-	product        string
-	pattern        *regexp.Regexp
-	versionPattern *regexp.Regexp
+// PageTransform transforms HTML files under a versioned folder.
+type PageTransform struct {
+	product string
+	pattern *regexp.Regexp
 }
 
-// NewVersionTransform created a new VersionTransform.
-func NewVersionTransform(product string) *VersionTransform {
-	return &VersionTransform{
-		product:        product,
-		pattern:        regexp.MustCompile(`^.*/v\d+\.\d+/.*\.html$`),
-		versionPattern: regexp.MustCompile(`^.*/(v\d+\.\d+)/.*$`),
+// NewPageTransform created a new PageTransform.
+func NewPageTransform(product string) *PageTransform {
+	return &PageTransform{
+		product: product,
+		pattern: regexp.MustCompile(`^.*/(v\d+\.\d+)/.*\.html$`),
 	}
 }
 
 // Match return true if the file is under a versioned folder.
-func (t VersionTransform) Match(path string) bool {
+func (t PageTransform) Match(path string) bool {
 	return t.pattern.MatchString(path)
 }
 
 // Apply applies HTML transformations.
-func (t VersionTransform) Apply(path string) error {
-	versions := t.versionPattern.FindStringSubmatch(path)
-
-	v := ""
-	if len(versions) > 1 {
-		v = versions[1]
+func (t PageTransform) Apply(path string) error {
+	versions := t.pattern.FindStringSubmatch(path)
+	if len(versions) < 2 {
+		return fmt.Errorf("version not found: %s", path)
 	}
+
+	v := versions[1]
 
 	doc, err := readDocument(path)
 	if err != nil {

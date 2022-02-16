@@ -55,7 +55,7 @@ func main() {
 
 func run(cfg Config) error {
 	transforms := []fileTransform{
-		NewVersionTransform(cfg.Product),
+		NewPageTransform(cfg.Product),
 		NewSitemapTransform(cfg.Product),
 	}
 

@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestVersionTransform_Match(t *testing.T) {
-	transform := NewVersionTransform("test")
+func TestPageTransform_Match(t *testing.T) {
+	transform := NewPageTransform("test")
 
 	testCases := []struct {
 		path   string
@@ -52,12 +52,12 @@ func TestVersionTransform_Match(t *testing.T) {
 	}
 }
 
-func TestVersionTransform_Apply(t *testing.T) {
+func TestPageTransform_Apply(t *testing.T) {
 	if runtime.GOOS == "windows" {
 		t.Skip("windows")
 	}
 
-	transform := NewVersionTransform("test")
+	transform := NewPageTransform("test")
 
 	testCases := []struct {
 		desc   string
