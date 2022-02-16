@@ -1,19 +1,15 @@
-name: Main
-
+name: "Release a tag"
 on:
   push:
-    branches:
-      - master
-  pull_request:
+    tags:
+      - v*
 
 jobs:
-
-  main:
-    name: Main Process
+  release:
+    name: Release Process
     runs-on: ubuntu-latest
     env:
       GO_VERSION: 1.17
-      GOLANGCI_LINT_VERSION: v1.44.0
       CGO_ENABLED: 0
 
     steps:
@@ -39,16 +35,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - name: Check and get dependencies
-        run: |
-          go mod tidy
-          git diff --exit-code go.mod
-          git diff --exit-code go.sum
-
-      # https://golangci-lint.run/usage/install#other-ci
-      - name: Install golangci-lint ${{ env.GOLANGCI_LINT_VERSION }}
-        run: curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin ${GOLANGCI_LINT_VERSION}
-
       - name: Make
         run: make
+
+      # https://goreleaser.com/ci/actions/
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v2
+        with:
+          version: latest
+          args: release --rm-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
