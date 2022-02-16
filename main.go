@@ -54,10 +54,7 @@ func main() {
 }
 
 func run(cfg Config) error {
-	productName := cfg.Product
-	if productName == "" {
-		productName = filepath.Base(cfg.Path)
-	}
+	productName := getProductName(cfg)
 
 	transforms := []fileTransform{
 		NewPageTransform(productName),
@@ -79,6 +76,14 @@ func run(cfg Config) error {
 			return nil
 		},
 	)
+}
+
+func getProductName(cfg Config) string {
+	if cfg.Product != "" {
+		return cfg.Product
+	}
+
+	return filepath.Base(cfg.Path)
 }
 
 func usage() {

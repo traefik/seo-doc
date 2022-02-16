@@ -25,6 +25,14 @@ func TestPageTransform_Match(t *testing.T) {
 			assert: assert.True,
 		},
 		{
+			path:   "/v2.4/index.html",
+			assert: assert.True,
+		},
+		{
+			path:   "v2.4/index.html",
+			assert: assert.False,
+		},
+		{
 			path:   "foo/index.html",
 			assert: assert.False,
 		},

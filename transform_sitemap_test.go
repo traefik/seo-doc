@@ -11,32 +11,42 @@ func TestSitemapTransform_Match(t *testing.T) {
 	transform := NewSitemapTransform("test")
 
 	testCases := []struct {
-		desc   string
 		path   string
 		assert assert.BoolAssertionFunc
 	}{
 		{
-			desc:   "match sitemap under version",
 			path:   "foo/v2.4/sitemap.xml",
 			assert: assert.True,
 		},
 		{
-			desc:   "match sitemap under version",
 			path:   "foo/v2.4/sitemap.xml.gz",
 			assert: assert.True,
 		},
 		{
-			desc:   "does not match sitemap under version",
+			path:   "/v2.4/sitemap.xml.gz",
+			assert: assert.True,
+		},
+		{
+			path:   "/v2.4/foo/bar/sitemap.xml.gz",
+			assert: assert.True,
+		},
+		{
+			path:   "/v2.4/foositemap.xml.gz",
+			assert: assert.True,
+		},
+		{
+			path:   "v2.4/sitemap.xml.gz",
+			assert: assert.False,
+		},
+		{
 			path:   "foo/v2.4/sitemap.xml_gz",
 			assert: assert.False,
 		},
 		{
-			desc:   "does not match sitemap under version",
 			path:   "foo/v2.4/powpow.xml.gz",
 			assert: assert.False,
 		},
 		{
-			desc:   "does not match sitemap under version",
 			path:   "/powpow.xml.gz",
 			assert: assert.False,
 		},
@@ -44,7 +54,7 @@ func TestSitemapTransform_Match(t *testing.T) {
 
 	for _, test := range testCases {
 		test := test
-		t.Run(test.desc, func(t *testing.T) {
+		t.Run(test.path, func(t *testing.T) {
 			t.Parallel()
 
 			test.assert(t, transform.Match(test.path))
