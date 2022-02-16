@@ -6,8 +6,14 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 )
+
+type fileTransform interface {
+	Match(path string) bool
+	Apply(path string) error
+}
 
 func main() {
 	cfg := Config{}
@@ -45,6 +51,29 @@ func main() {
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}
+}
+
+func run(cfg Config) error {
+	transforms := []fileTransform{
+		NewVersionTransform(cfg.Product),
+		NewSitemapTransform(cfg.Product),
+	}
+
+	return filepath.Walk(cfg.Path,
+		func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+
+			for _, transform := range transforms {
+				if transform.Match(path) {
+					return transform.Apply(path)
+				}
+			}
+
+			return nil
+		},
+	)
 }
 
 func usage() {
