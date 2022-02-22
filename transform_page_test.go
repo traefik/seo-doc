@@ -65,6 +65,8 @@ func TestPageTransform_Apply(t *testing.T) {
 		t.Skip("windows")
 	}
 
+	t.Setenv(envVarLatestTag, "v1.0.5")
+
 	transform := NewPageTransform("test")
 
 	testCases := []struct {
@@ -94,7 +96,6 @@ func TestPageTransform_Apply(t *testing.T) {
 		test := test
 		t.Run(test.desc, func(t *testing.T) {
 			t.Parallel()
-
 			file := copyFile(t, test.src)
 
 			err := transform.Apply(file)
