@@ -65,30 +65,28 @@ func TestPageTransform_Apply(t *testing.T) {
 		t.Skip("windows")
 	}
 
-	t.Setenv(envVarLatestTag, "v1.0.5")
-
 	transform := NewPageTransform("test")
 
 	testCases := []struct {
 		desc   string
 		src    string
-		dst    string
 		update bool
 	}{
 		{
 			desc: "without canonical",
-			src:  "./fixtures/input/index.html",
-			dst:  "./fixtures/output/index.html",
+			src:  "index.html",
+		},
+		{
+			desc: "without canonical, add sub-folder",
+			src:  "foo/index.html",
 		},
 		{
 			desc: "with canonical",
-			src:  "./fixtures/input/index1.html",
-			dst:  "./fixtures/output/index1.html",
+			src:  "index1.html",
 		},
 		{
 			desc: "with long title",
-			src:  "./fixtures/input/index2.html",
-			dst:  "./fixtures/output/index2.html",
+			src:  "index2.html",
 		},
 	}
 
@@ -96,34 +94,48 @@ func TestPageTransform_Apply(t *testing.T) {
 		test := test
 		t.Run(test.desc, func(t *testing.T) {
 			t.Parallel()
-			file := copyFile(t, test.src)
+
+			root := t.TempDir()
+
+			// Creates a fake latest version.
+			copyFile(t, "index.html", "", root)
+			copyFile(t, "foo/index.html", "", root)
+
+			file := copyFile(t, test.src, "v1.0", root)
 
 			err := transform.Apply(file)
 			require.NoError(t, err)
 
-			compareFile(t, file, test.dst, test.update)
+			compareFile(t, file, filepath.Join("./fixtures/output/", test.src), test.update)
 		})
 	}
 }
 
-func copyFile(t *testing.T, src string) string {
+func copyFile(t *testing.T, src, v, root string) string {
 	t.Helper()
 
-	source, err := os.Open(src)
+	if root == "" {
+		root = t.TempDir()
+	}
+
+	if v != "" {
+		root = filepath.Join(root, v)
+	}
+
+	dst := filepath.Join(root, src)
+
+	err := os.MkdirAll(filepath.Dir(dst), 0o700)
 	require.NoError(t, err)
-	defer func() { _ = source.Close() }()
 
-	temp := filepath.Join(t.TempDir(), "v1.0")
-	err = os.MkdirAll(temp, 0o700)
+	in, err := os.Open(filepath.Join("./fixtures/input/", src))
 	require.NoError(t, err)
+	defer func() { _ = in.Close() }()
 
-	dst := filepath.Join(temp, filepath.Base(src))
-
-	destination, err := os.Create(dst)
+	out, err := os.Create(dst)
 	require.NoError(t, err)
-	defer func() { _ = destination.Close() }()
+	defer func() { _ = out.Close() }()
 
-	_, err = io.Copy(destination, source)
+	_, err = io.Copy(out, in)
 	require.NoError(t, err)
 
 	return dst
@@ -136,6 +148,9 @@ func compareFile(t *testing.T, src, dst string, update bool) {
 	require.NoError(t, err)
 
 	if update {
+		err = os.MkdirAll(filepath.Dir(dst), 0o700)
+		require.NoError(t, err)
+
 		var out *os.File
 		out, err = os.Create(dst)
 		require.NoError(t, err)
@@ -154,8 +169,8 @@ func compareFile(t *testing.T, src, dst string, update bool) {
 	diff := difflib.UnifiedDiff{
 		A:        difflib.SplitLines(string(bytes.TrimSpace(a))),
 		B:        difflib.SplitLines(string(bytes.TrimSpace(b))),
-		FromFile: "Original",
-		ToFile:   "Current",
+		FromFile: "Actual",
+		ToFile:   "Expected",
 		Context:  2,
 	}
 	text, err := difflib.GetUnifiedDiffString(diff)

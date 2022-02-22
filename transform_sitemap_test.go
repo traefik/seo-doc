@@ -71,15 +71,15 @@ func TestSitemapTransform_Apply(t *testing.T) {
 	}{
 		{
 			desc: "",
-			path: "./fixtures/input/sitemap.xml",
+			path: "sitemap.xml",
 		},
 		{
 			desc: "",
-			path: "./fixtures/input/sitemap.xml.gz",
+			path: "sitemap.xml.gz",
 		},
 		{
 			desc: "",
-			path: "./fixtures/input/index.html",
+			path: "index.html",
 		},
 	}
 
@@ -88,7 +88,7 @@ func TestSitemapTransform_Apply(t *testing.T) {
 		t.Run(test.desc, func(t *testing.T) {
 			t.Parallel()
 
-			file := copyFile(t, test.path)
+			file := copyFile(t, test.path, "v1.0", "")
 
 			err := transform.Apply(file)
 			require.NoError(t, err)
