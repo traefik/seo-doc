@@ -15,6 +15,14 @@ func TestSitemapTransform_Match(t *testing.T) {
 		assert assert.BoolAssertionFunc
 	}{
 		{
+			path:   "foo/sitemap.xml",
+			assert: assert.True,
+		},
+		{
+			path:   "foo/sitemap.xml.gz",
+			assert: assert.True,
+		},
+		{
 			path:   "foo/v2.4/sitemap.xml",
 			assert: assert.True,
 		},
@@ -31,11 +39,15 @@ func TestSitemapTransform_Match(t *testing.T) {
 			assert: assert.True,
 		},
 		{
-			path:   "/v2.4/foositemap.xml.gz",
-			assert: assert.True,
+			path:   "/sitemap.xml.gz",
+			assert: assert.False,
 		},
 		{
-			path:   "v2.4/sitemap.xml.gz",
+			path:   "sitemap.xml.gz",
+			assert: assert.False,
+		},
+		{
+			path:   "/v2.4/foositemap.xml.gz",
 			assert: assert.False,
 		},
 		{
