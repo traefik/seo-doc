@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/traefik/seo/sitemap"
 	"github.com/traefik/seo/transform"
 	"github.com/urfave/cli/v2"
 )
@@ -45,6 +46,7 @@ func main() {
 					return nil
 				},
 			},
+			sitemap.Command(),
 		},
 	}
 

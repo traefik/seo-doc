@@ -26,6 +26,7 @@ linters:
     - maligned # deprecated
     - scopelint # deprecated
     - golint # deprecated
+    - cyclop # duplicate of gocyclo
     - lll
     - gas
     - dupl
@@ -44,6 +45,7 @@ linters:
     - noctx
     - forbidigo
     - varnamelen
+    - ifshort
 
 issues:
   exclude-use-default: false

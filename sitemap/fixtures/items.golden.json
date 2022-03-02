@@ -1,0 +1,1177 @@
+{
+  "https://doc.traefik.io/traefik-enterprise/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/concepts/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/concepts/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/features/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/features/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/getting-started/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/getting-started/",
+    "date": "2022-02-16T14:58:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/customizing/kubernetes/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/customizing/kubernetes/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/customizing/swarm/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/customizing/swarm/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/ecs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/ecs/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/gitops/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/gitops/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/helm/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/helm/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/teectl/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/kubernetes/teectl/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/nomad/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/nomad/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/on-premise/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/on-premise/",
+    "date": "2022-02-16T14:58:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/requirements/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/requirements/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/swarm/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/swarm/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/installing/teectl-cli/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/installing/teectl-cli/",
+    "date": "2022-02-16T14:58:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/kb/faq/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/kb/faq/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/kb/glossary/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/kb/glossary/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/kb/release-notes/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/kb/release-notes/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/apikey/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/apikey/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/hmac/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/hmac/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/http-cache/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/http-cache/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/in-flight-req-limit/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/in-flight-req-limit/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/jwt/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/jwt/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/ldap/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/ldap/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/oauth-intro/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/oauth-intro/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/oidc/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/oidc/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/opa/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/opa/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/middlewares/rate-limit/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/middlewares/rate-limit/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/api/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/api/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/apiportal/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/apiportal/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/backup-restore/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/backup-restore/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/cluster-creds/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/cluster-creds/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/dashboard/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/dashboard/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/disaster-recovery/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/disaster-recovery/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/dynamic-configuration/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/dynamic-configuration/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/fips-image/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/fips-image/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/high-availability/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/high-availability/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/introduction/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/introduction/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/metrics/datadog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/metrics/datadog/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/metrics/instana/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/metrics/instana/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/metrics/prometheus/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/metrics/prometheus/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/migrating-from-v1-to-v2/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/migrating-from-v1-to-v2/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/opa/opa-guide/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/opa/opa-guide/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/rootless-image/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/rootless-image/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/service-mesh/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/service-mesh/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/static-configuration/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/static-configuration/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/swarm-network-discovery/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/swarm-network-discovery/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/teectl-cluster-mgt/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/teectl-cluster-mgt/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/uninstall/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/uninstall/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/vault-pki-guide/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/vault-pki-guide/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/kubernetes/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/kubernetes/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/on-premise/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/on-premise/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/swarm/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/operations/version-upgrade/swarm/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/plugins/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/plugins/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/providers/traefik/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/providers/traefik/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/providers/traefikee/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/providers/traefikee/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/providers/vault-kv/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/providers/vault-kv/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/cli/teectl/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/cli/teectl/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/cli/traefikee/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/cli/traefikee/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/consul-catalog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/consul-catalog/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/docker/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/docker/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/file/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/file/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/kubernetes-crd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/kubernetes-crd/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/marathon/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/marathon/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/rancher/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/rancher/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/traefikee/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/dynamic/traefikee/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/references/configuration/static/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/references/configuration/static/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/tls/acme/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/tls/acme/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/tls/distributed-acme/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/tls/distributed-acme/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/tls/teectl/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/tls/teectl/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-enterprise/tls/vault-pki/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-enterprise/tls/vault-pki/",
+    "date": "2022-02-16T14:26:07Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/api/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/api/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/compatibility/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/compatibility/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/configuration/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/configuration/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/building-testing/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/building-testing/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/documentation/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/documentation/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/maintainers/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/maintainers/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/submitting-issues/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/submitting-issues/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/submitting-pull-requests/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/submitting-pull-requests/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/contributing/thank-you/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/contributing/thank-you/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/examples/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/examples/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/install/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/install/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/migration/helm-chart/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/migration/helm-chart/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/migration/traefik-mesh-v1/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/migration/traefik-mesh-v1/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-mesh/quickstart/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-mesh/quickstart/",
+    "date": "2022-02-15T17:06:08Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/alerts/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/alerts/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/connecting/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/connecting/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/ips/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/ips/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/metrics/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/metrics/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/plugins/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/plugins/overview/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik-pilot/plugins/plugin-dev/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik-pilot/plugins/plugin-dev/",
+    "date": "2022-02-15T00:54:07Z"
+  },
+  "https://doc.traefik.io/traefik/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/advocating/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/advocating/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/building-testing/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/building-testing/",
+    "date": "2022-02-18T15:52:07Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/data-collection/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/data-collection/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/documentation/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/documentation/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/maintainers-guidelines/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/maintainers-guidelines/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/maintainers/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/maintainers/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/submitting-issues/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/submitting-issues/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/submitting-pull-requests/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/submitting-pull-requests/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/submitting-security-issues/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/submitting-security-issues/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/contributing/thank-you/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/contributing/thank-you/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/getting-started/concepts/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/getting-started/concepts/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/getting-started/configuration-overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/getting-started/configuration-overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/getting-started/faq/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/getting-started/faq/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/getting-started/install-traefik/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/getting-started/install-traefik/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/getting-started/quick-start/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/getting-started/quick-start/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/glossary/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/glossary/",
+    "date": "2021-04-08T21:02:03Z"
+  },
+  "https://doc.traefik.io/traefik/https/acme/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/https/acme/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/https/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/https/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/https/tls/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/https/tls/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/addprefix/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/addprefix/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/basicauth/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/basicauth/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/buffering/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/buffering/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/chain/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/chain/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/circuitbreaker/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/circuitbreaker/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/compress/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/compress/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/contenttype/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/contenttype/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/digestauth/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/digestauth/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/errorpages/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/errorpages/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/forwardauth/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/forwardauth/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/headers/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/headers/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/addprefix/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/addprefix/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/basicauth/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/basicauth/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/buffering/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/buffering/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/chain/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/chain/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/circuitbreaker/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/circuitbreaker/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/compress/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/compress/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/contenttype/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/contenttype/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/digestauth/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/digestauth/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/errorpages/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/errorpages/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/forwardauth/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/forwardauth/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/headers/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/headers/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/inflightreq/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/inflightreq/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/ipwhitelist/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/ipwhitelist/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/passtlsclientcert/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/passtlsclientcert/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/ratelimit/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/ratelimit/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/redirectregex/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/redirectregex/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/redirectscheme/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/redirectscheme/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/replacepath/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/replacepath/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/replacepathregex/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/replacepathregex/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/retry/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/retry/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/stripprefix/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/stripprefix/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/http/stripprefixregex/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/http/stripprefixregex/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/inflightreq/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/inflightreq/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/ipwhitelist/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/ipwhitelist/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/passtlsclientcert/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/passtlsclientcert/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/ratelimit/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/ratelimit/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/redirectregex/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/redirectregex/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/redirectscheme/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/redirectscheme/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/replacepath/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/replacepath/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/replacepathregex/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/replacepathregex/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/retry/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/retry/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/stripprefix/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/stripprefix/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/stripprefixregex/": {
+    "status": "D",
+    "path": "https://doc.traefik.io/traefik/middlewares/stripprefixregex/",
+    "date": "2021-08-19T14:38:05Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/tcp/inflightconn/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/tcp/inflightconn/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/tcp/ipwhitelist/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/tcp/ipwhitelist/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/middlewares/tcp/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/middlewares/tcp/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/migration/v1-to-v2/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/migration/v1-to-v2/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/migration/v2/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/migration/v2/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/access-logs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/access-logs/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/logs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/logs/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/metrics/datadog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/metrics/datadog/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/metrics/influxdb/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/metrics/influxdb/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/metrics/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/metrics/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/metrics/prometheus/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/metrics/prometheus/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/metrics/statsd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/metrics/statsd/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/datadog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/datadog/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/elastic/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/elastic/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/haystack/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/haystack/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/instana/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/instana/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/jaeger/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/jaeger/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/observability/tracing/zipkin/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/observability/tracing/zipkin/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/operations/api/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/operations/api/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/operations/cli/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/operations/cli/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/operations/dashboard/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/operations/dashboard/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/operations/ping/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/operations/ping/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/plugins/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/plugins/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/consul-catalog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/consul-catalog/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/consul/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/consul/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/docker/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/docker/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/ecs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/ecs/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/etcd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/etcd/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/file/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/file/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/http/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/http/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/kubernetes-crd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/kubernetes-crd/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/kubernetes-gateway/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/kubernetes-gateway/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/kubernetes-ingress/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/kubernetes-ingress/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/marathon/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/marathon/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/rancher/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/rancher/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/redis/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/redis/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/providers/zookeeper/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/providers/zookeeper/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/consul-catalog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/consul-catalog/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/docker/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/docker/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/ecs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/ecs/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/file/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/file/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/kubernetes-crd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/kubernetes-crd/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/kubernetes-gateway/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/kubernetes-gateway/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/kv-ref/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/kv-ref/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/kv/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/kv/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/marathon/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/marathon/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/dynamic-configuration/rancher/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/dynamic-configuration/rancher/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/cli-ref/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/cli-ref/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/cli/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/cli/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/env-ref/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/env-ref/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/env/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/env/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/file/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/file/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/reference/static-configuration/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/reference/static-configuration/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/entrypoints/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/entrypoints/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/overview/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/overview/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/consul-catalog/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/consul-catalog/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/docker/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/docker/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/ecs/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/ecs/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/kubernetes-gateway/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/kubernetes-gateway/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/kubernetes-ingress/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/kubernetes-ingress/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/kv/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/kv/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/marathon/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/marathon/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/rancher/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/rancher/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/providers/service-by-label/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/providers/service-by-label/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/routers/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/routers/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/routing/services/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/routing/services/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/crd-acme/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/crd-acme/",
+    "date": "2022-02-21T12:48:07Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-dns/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-dns/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-http/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-http/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-tls/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/docker-compose/acme-tls/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/grpc/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/grpc/",
+    "date": "2022-02-15T17:16:09Z"
+  },
+  "https://doc.traefik.io/traefik/user-guides/marathon/": {
+    "status": "M",
+    "path": "https://doc.traefik.io/traefik/user-guides/marathon/",
+    "date": "2022-02-21T10:58:12Z"
+  }
+}
