@@ -2,97 +2,59 @@ package main
 
 import (
 	"errors"
-	"flag"
-	"fmt"
 	"log"
 	"os"
-	"path/filepath"
 	"strings"
+
+	"github.com/traefik/seo/transform"
+	"github.com/urfave/cli/v2"
 )
 
-type fileTransform interface {
-	Match(path string) bool
-	Apply(path string) error
-}
-
 func main() {
-	cfg := Config{}
+	app := &cli.App{
+		Name:        "seo",
+		Description: "Documentation modification for SEO.",
+		Usage:       "SEO doc",
+		Flags: []cli.Flag{
+			&cli.StringFlag{
+				Name:  transform.FlagPath,
+				Usage: "Path of the documentation.",
+			},
+			&cli.StringFlag{
+				Name:  transform.FlagProduct,
+				Usage: "Product name.",
+			},
+		},
+		Action: func(cliCtx *cli.Context) error {
+			config := transform.NewConfig(cliCtx)
 
-	flag.StringVar(&cfg.Path, "path", "", "Path of the documentation")
-	flag.StringVar(&cfg.Product, "product", "", "Product name")
-	flag.BoolVar(&cfg.Debug, "debug", false, "Debug mode")
-
-	version := flag.Bool("v", false, "Show version.")
-	help := flag.Bool("h", false, "Show this help.")
-
-	flag.Usage = usage
-	flag.Parse()
-
-	if *help {
-		usage()
-	}
-
-	if *version {
-		displayVersion()
-		return
-	}
-
-	if flag.NArg() > 0 {
-		usage()
-	}
-
-	err := validate(cfg)
-	if err != nil {
-		flag.PrintDefaults()
-		log.Fatal(err)
-	}
-
-	err = run(cfg)
-	if err != nil {
-		log.Fatalf("error: %v", err)
-	}
-}
-
-func run(cfg Config) error {
-	productName := getProductName(cfg)
-
-	transforms := []fileTransform{
-		NewPageTransform(productName),
-		NewSitemapTransform(productName),
-	}
-
-	return filepath.Walk(cfg.Path,
-		func(path string, info os.FileInfo, err error) error {
+			err := validate(config)
 			if err != nil {
 				return err
 			}
 
-			for _, transform := range transforms {
-				if transform.Match(path) {
-					return transform.Apply(path)
-				}
-			}
-
-			return nil
+			return transform.Run(config)
 		},
-	)
-}
-
-func getProductName(cfg Config) string {
-	if cfg.Product != "" {
-		return cfg.Product
+		Commands: []*cli.Command{
+			{
+				Name:        "version",
+				Usage:       "Version information.",
+				Description: "Version information.",
+				Action: func(cliCtx *cli.Context) error {
+					displayVersion()
+					return nil
+				},
+			},
+		},
 	}
 
-	return filepath.Base(cfg.Path)
+	err := app.Run(os.Args)
+	if err != nil {
+		log.Fatal("Error while executing command ", err)
+	}
 }
 
-func usage() {
-	_, _ = os.Stderr.WriteString(fmt.Sprintf("Seo (%s)\n\nFlags:\n", version))
-	flag.PrintDefaults()
-	os.Exit(2)
-}
-
-func validate(cfg Config) error {
+func validate(cfg transform.Config) error {
 	if strings.TrimSpace(cfg.Path) == "" {
 		return errors.New("path is required")
 	}
