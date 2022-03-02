@@ -28,6 +28,7 @@ type GitInfo struct {
 	UserName  string
 	UserEmail string
 	Token     string
+	Branch    string
 }
 
 // NewGitInfo creates a new GitInfo.
@@ -36,15 +37,16 @@ func NewGitInfo(cliCtx *cli.Context) GitInfo {
 		UserName:  cliCtx.String(flagGitUserName),
 		UserEmail: cliCtx.String(flagGitUserEmail),
 		Token:     cliCtx.String(flagGithubToken),
+		Branch:    cliCtx.String(flagGitBranch),
 	}
 }
 
 // Commit commits and push the changes.
-func Commit(gCfg GitInfo, debug bool) error {
+func Commit(cfg GitInfo, debug bool) error {
 	ctx := context.Background()
 
 	// setup git user info
-	output, err := setupGitUserInfo(gCfg, debug)
+	output, err := setupGitUserInfo(cfg, debug)
 	if err != nil {
 		fmt.Println(output)
 		return fmt.Errorf("failed to set Git user: %w", err)
@@ -78,8 +80,8 @@ func Commit(gCfg GitInfo, debug bool) error {
 
 	// push the branch to the target git repo
 	output, err = git.PushWithContext(ctx,
-		push.Remote("origin"), push.RefSpec(defaultBranch),
-		push.Repo(fmt.Sprintf("https://%s:@github.com/traefik/doc.git", gCfg.Token)),
+		push.Repo(fmt.Sprintf("https://%s:@github.com/traefik/doc.git", cfg.Token)),
+		push.Remote("origin"), push.RefSpec(cfg.Branch),
 		git.Debugger(debug))
 	if err != nil {
 		log.Println(output)

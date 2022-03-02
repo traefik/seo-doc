@@ -11,6 +11,7 @@ const (
 	flagGitUserName  = "git-user-name"
 	flagGitUserEmail = "git-user-email"
 	flagGithubToken  = "token"
+	flagGitBranch    = "git-branch"
 )
 
 // Command is the sitemap command.
@@ -48,6 +49,13 @@ func Command() *cli.Command {
 				Usage:    "GitHub token.",
 				EnvVars:  []string{"GITHUB_TOKEN"},
 				Required: true,
+			},
+			&cli.StringFlag{
+				Name:    flagGitBranch,
+				Usage:   "The name of the branch to push on it.",
+				EnvVars: []string{strcase.ToSNAKE(flagGitBranch)},
+				Value:   defaultBranch,
+				Hidden:  true,
 			},
 		},
 		Action: func(cliCtx *cli.Context) error {
