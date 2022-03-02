@@ -4,6 +4,8 @@ go 1.17
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.0
+	github.com/ettle/strcase v0.1.1
+	github.com/ldez/go-git-cmd-wrapper/v2 v2.3.0
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/stretchr/testify v1.7.0
 	github.com/urfave/cli/v2 v2.3.0
