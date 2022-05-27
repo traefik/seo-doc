@@ -9,6 +9,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/stretchr/testify v1.7.1
 	github.com/urfave/cli/v2 v2.8.1
+	golang.org/x/text v0.3.7
 )
 
 require (

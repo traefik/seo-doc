@@ -12,6 +12,8 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 const rootURL = "https://doc.traefik.io"
@@ -81,7 +83,7 @@ func (t PageTransform) Apply(filename string) error {
 		if title != nil {
 			titleText := title.Text()
 
-			productNameTitleCase := strings.Title(strings.ReplaceAll(t.product, "-", " "))
+			productNameTitleCase := cases.Title(language.English).String(strings.ReplaceAll(t.product, "-", " "))
 			suffix := fmt.Sprintf("| %s | %s", productNameTitleCase, v)
 
 			if !strings.Contains(titleText, suffix) {

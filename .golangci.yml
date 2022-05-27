@@ -42,6 +42,7 @@ linters:
     - wrapcheck
     - exhaustive
     - exhaustivestruct
+    - exhaustruct
     - noctx
     - forbidigo
     - varnamelen
