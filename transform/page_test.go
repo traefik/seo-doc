@@ -65,28 +65,36 @@ func TestPageTransform_Apply(t *testing.T) {
 		t.Skip("windows")
 	}
 
-	transform := NewPageTransform("test")
-
 	testCases := []struct {
-		desc   string
-		src    string
-		update bool
+		desc    string
+		src     string
+		product string
+		update  bool
 	}{
 		{
-			desc: "without canonical",
-			src:  "index.html",
+			desc:    "without canonical",
+			src:     "index.html",
+			product: "test",
 		},
 		{
-			desc: "without canonical, add sub-folder",
-			src:  "foo/index.html",
+			desc:    "without canonical, add sub-folder",
+			src:     "foo/index.html",
+			product: "test",
 		},
 		{
-			desc: "with canonical",
-			src:  "index1.html",
+			desc:    "with canonical",
+			src:     "index1.html",
+			product: "test",
 		},
 		{
-			desc: "with long title",
-			src:  "index2.html",
+			desc:    "with long title",
+			src:     "index2.html",
+			product: "test",
+		},
+		{
+			desc:    "middlewares rule",
+			src:     "middlewares/foo/index.html",
+			product: "traefik",
 		},
 	}
 
@@ -100,13 +108,17 @@ func TestPageTransform_Apply(t *testing.T) {
 			// Creates a fake latest version.
 			copyFile(t, "index.html", "", root)
 			copyFile(t, "foo/index.html", "", root)
+			copyFile(t, "middlewares/foo/index.html", "", root)
+			copyFile(t, "middlewares/http/foo/index.html", "", root)
 
 			file := copyFile(t, test.src, "v1.0", root)
+
+			transform := NewPageTransform(test.product)
 
 			err := transform.Apply(file)
 			require.NoError(t, err)
 
-			compareFile(t, file, filepath.Join("./fixtures/output/", test.src), test.update)
+			compareFile(t, filepath.Join("./fixtures/output/", test.src), file, test.update)
 		})
 	}
 }

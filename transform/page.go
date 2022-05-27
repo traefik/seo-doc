@@ -52,9 +52,20 @@ func (t PageTransform) Apply(filename string) error {
 	}
 
 	doc.Find("head").Each(func(i int, s *goquery.Selection) {
+		expectedRelPath := versions[3]
+		expectedAbs := filepath.Join(versions[1], expectedRelPath)
+
+		if t.product == "traefik" {
+			// exception your middlewares (middlewares/foo/index.html -> (middlewares/http/foo/index.html)
+			midExp := regexp.MustCompile(`^middlewares/([^/]+/[^/]+.html)`)
+			if midExp.MatchString(expectedRelPath) {
+				expectedRelPath = "middlewares/http/" + midExp.FindStringSubmatch(expectedRelPath)[1]
+			}
+		}
+
 		// Add link canonical URL
-		if _, err = os.Stat(filepath.Join(versions[1], versions[3])); err == nil {
-			t.addCanonical(s, versions[3])
+		if _, err = os.Stat(expectedAbs); err == nil {
+			t.addCanonical(s, expectedRelPath)
 			log.Printf("[canonical] %s Adding canonical link", filename)
 		}
 
