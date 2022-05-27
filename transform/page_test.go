@@ -108,7 +108,6 @@ func TestPageTransform_Apply(t *testing.T) {
 			// Creates a fake latest version.
 			copyFile(t, "index.html", "", root)
 			copyFile(t, "foo/index.html", "", root)
-			copyFile(t, "middlewares/foo/index.html", "", root)
 			copyFile(t, "middlewares/http/foo/index.html", "", root)
 
 			file := copyFile(t, test.src, "v1.0", root)

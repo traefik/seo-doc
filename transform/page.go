@@ -62,6 +62,7 @@ func (t PageTransform) Apply(filename string) error {
 			midExp := regexp.MustCompile(`^middlewares/([^/]+/[^/]+.html)`)
 			if midExp.MatchString(expectedRelPath) {
 				expectedRelPath = "middlewares/http/" + midExp.FindStringSubmatch(expectedRelPath)[1]
+				expectedAbs = filepath.Join(versions[1], expectedRelPath)
 			}
 		}
 
