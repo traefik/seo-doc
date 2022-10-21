@@ -9,7 +9,7 @@ jobs:
     name: Release Process
     runs-on: ubuntu-latest
     env:
-      GO_VERSION: 1.17
+      GO_VERSION: 1.19
       CGO_ENABLED: 0
 
     steps:
@@ -28,7 +28,7 @@ jobs:
 
       # https://github.com/marketplace/actions/cache
       - name: Cache Go modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/go/pkg/mod
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
