@@ -7,9 +7,9 @@ require (
 	github.com/ettle/strcase v0.1.1
 	github.com/ldez/go-git-cmd-wrapper/v2 v2.3.0
 	github.com/pmezard/go-difflib v1.0.0
-	github.com/stretchr/testify v1.8.0
-	github.com/urfave/cli/v2 v2.20.2
-	golang.org/x/text v0.4.0
+	github.com/stretchr/testify v1.8.1
+	github.com/urfave/cli/v2 v2.24.1
+	golang.org/x/text v0.6.0
 )
 
 require (
