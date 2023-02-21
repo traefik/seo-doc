@@ -1,15 +1,15 @@
 module github.com/traefik/seo
 
-go 1.19
+go 1.20
 
 require (
-	github.com/PuerkitoBio/goquery v1.8.0
+	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/ettle/strcase v0.1.1
-	github.com/ldez/go-git-cmd-wrapper/v2 v2.3.0
+	github.com/ldez/go-git-cmd-wrapper/v2 v2.4.0
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/stretchr/testify v1.8.1
-	github.com/urfave/cli/v2 v2.24.1
-	golang.org/x/text v0.6.0
+	github.com/urfave/cli/v2 v2.24.4
+	golang.org/x/text v0.7.0
 )
 
 require (
@@ -18,6 +18,6 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
-	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
+	golang.org/x/net v0.7.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

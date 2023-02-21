@@ -69,3 +69,6 @@ issues:
         - funlen
     - path: version.go
       text: (version|commit|date) is a global variable
+    - path: .*/src/encoding/xml/xml.go # Disabled to a bug in musttag
+      linters:
+        - musttag
