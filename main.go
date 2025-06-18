@@ -41,7 +41,7 @@ func main() {
 				Name:        "version",
 				Usage:       "Version information.",
 				Description: "Version information.",
-				Action: func(cliCtx *cli.Context) error {
+				Action: func(_ *cli.Context) error {
 					displayVersion()
 					return nil
 				},
