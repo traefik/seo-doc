@@ -5,6 +5,7 @@ import (
 	"encoding/xml"
 	"io"
 	"log"
+	"net/http"
 	"os"
 	"path/filepath"
 )
@@ -97,4 +98,22 @@ func saveSitemap(dst string, set URLSet) error {
 	}
 
 	return nil
+}
+
+func isValidURL(urlLoc string) bool {
+	resp, err := http.Head(urlLoc)
+	if err != nil {
+		log.Printf("Error checking URL %s: %v\n", urlLoc, err)
+		return false
+	}
+	defer func() {
+		_ = resp.Body.Close()
+	}()
+
+	if resp.StatusCode == http.StatusOK {
+		return true
+	}
+
+	log.Printf("URL %s returned status code %d\n", urlLoc, resp.StatusCode)
+	return false
 }
