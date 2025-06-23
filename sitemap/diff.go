@@ -65,6 +65,15 @@ func FromDiff(src string) (URLSet, error) {
 	// Merge.
 	set := merge(us, items)
 
+	// Verify that the URLs are valid.
+	var newSmurls []SMUrl
+	for _, u := range set.URL {
+		if isValidURL(u.Loc) {
+			newSmurls = append(newSmurls, u)
+		}
+	}
+	set.URL = newSmurls
+
 	log.Println("new", len(set.URL), len(items))
 
 	return set, nil

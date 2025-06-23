@@ -20,7 +20,7 @@ func Run(cfg Config) error {
 	}
 
 	return filepath.Walk(cfg.Path,
-		func(path string, info os.FileInfo, err error) error {
+		func(path string, _ os.FileInfo, err error) error {
 			if err != nil {
 				return err
 			}

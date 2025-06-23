@@ -1,6 +1,7 @@
 package sitemap
 
 import (
+	"fmt"
 	"io/fs"
 	"path/filepath"
 	"regexp"
@@ -28,7 +29,7 @@ func FromScratch(root string) (URLSet, error) {
 		}
 
 		if strings.HasPrefix(info.Name(), ".") {
-			return filepath.SkipDir
+			return nil
 		}
 
 		if !exp.MatchString(path) {
@@ -41,8 +42,15 @@ func FromScratch(root string) (URLSet, error) {
 			return nil
 		}
 
+		// Check if the Loc URL is not a 404 by doing an HTTP request.
+		locURL := baseURL + urlPath
+		if !isValidURL(locURL) {
+			fmt.Printf("Skipping invalid URL: %s\n", locURL)
+			return nil
+		}
+
 		us.URL = append(us.URL, SMUrl{
-			Loc:        baseURL + urlPath,
+			Loc:        locURL,
 			LastMod:    time.Now().Format("2006-01-02"),
 			ChangeFreq: changeFreqDaily,
 		})

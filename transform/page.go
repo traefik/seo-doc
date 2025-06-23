@@ -53,7 +53,7 @@ func (t PageTransform) Apply(filename string) error {
 		return err
 	}
 
-	doc.Find("head").Each(func(i int, s *goquery.Selection) {
+	doc.Find("head").Each(func(_ int, s *goquery.Selection) {
 		expectedRelPath := versions[3]
 		expectedAbs := filepath.Join(versions[1], expectedRelPath)
 
@@ -88,7 +88,7 @@ func (t PageTransform) Apply(filename string) error {
 			suffix := fmt.Sprintf("| %s | %s", productNameTitleCase, v)
 
 			if !strings.Contains(titleText, suffix) {
-				newTitle := fmt.Sprintf("%s %s", strings.ReplaceAll(titleText, fmt.Sprintf(` - %s`, productNameTitleCase), ""), suffix)
+				newTitle := fmt.Sprintf("%s %s", strings.ReplaceAll(titleText, " - "+productNameTitleCase, ""), suffix)
 				if len(newTitle) > maxTitleLength {
 					maxNewTitleLength := maxTitleLength - len(suffix)
 					newTitle = fmt.Sprintf("%s... %s", titleText[:maxNewTitleLength-4], suffix)

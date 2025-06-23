@@ -29,7 +29,7 @@ func Command() *cli.Command {
 			},
 			&cli.BoolFlag{
 				Name:    flagDebug,
-				Usage:   "Path to the root of the documentation.",
+				Usage:   "Enable debug mode.",
 				EnvVars: []string{strcase.ToSNAKE(flagDebug)},
 			},
 			&cli.StringFlag{
